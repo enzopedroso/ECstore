@@ -1,0 +1,894 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: #000;
+    color: #fff;
+    padding: 30px 20px;
+    z-index: 9999;
+}
+
+#buscar #logo {
+    margin: 10px 10px;
+    width: 60px;
+}
+
+#buscar {
+    display: flex;
+    justify-content: center;
+}
+
+#divBusca {
+    background-color: #ffffff;
+    border: solid 1px;
+    border-radius: 15px;
+    width: 50%;
+    text-align: right;
+    width: 50%;
+    margin: auto;
+}
+
+#txtBusca {
+    float: left;
+    background-color: transparent;
+    padding-left: 15px;
+    font-style: italic;
+    font-size: 20px;
+    border: none;
+    height: 45px;
+    width: 850px;
+
+}
+
+#botao {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+
+}
+
+
+#carrinho {
+    width: 100px;
+    margin-right: 100px;
+    float: right;
+}
+
+#cabecalho {
+    background-color: #D9D9D9;
+    text-align: center;
+
+}
+
+#cabecalho li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px;
+}
+
+#cabecalho a {
+    text-decoration: none;
+    color: #000;
+}
+
+#cabecalho a:hover {
+    color: #FFF;
+    background-color: rgb(54, 54, 54);
+    padding: 10px;
+}
+
+#cabecalho a:active {
+    color: #FFF;
+    text-decoration: none;
+}
+
+main {
+    background-color: #fff;
+}
+
+.banner {
+    padding: 15px;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.categorias {
+    padding: 15px;
+}
+
+.categorias article {
+    background-color: #fff;
+    border: 1px solid #000;
+    margin-bottom: 2%;
+    padding: 5px;
+    border-left: 5px solid #f5df4d;
+}
+
+.titulo {
+    margin-top: 100px;
+    font-size: 35px;
+    text-align: center;
+}
+
+#camisas {
+    display: flex;
+    justify-content: center;
+}
+
+#camisas a {
+    text-decoration: none;
+    color: #000;
+}
+
+.produto {
+    display: inline-block;
+    height: 500px;
+    width: 400px;
+    background-color: #D9D9D9;
+    margin: auto;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    box-sizing: border-box;
+
+}
+
+.produto:hover {
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.05);
+    transform: scale(1.03);
+    transition: 0.5s;
+}
+
+.produto p {
+    font-size: 25px;
+}
+
+#preco {
+    margin-top: 0px;
+    font-size: 40px;
+
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+    color: #fff;
+    padding: 50px 150px;
+}
+
+th {
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+td {
+    text-align: center;
+    padding: 5px 100px;
+}
+
+#rodape a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#rodape p {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.politicas h2 {
+    text-align: center;
+    font-size: 45px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.politicas h3 {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.politicas p {
+    margin: 30px 300px;
+    text-align: justify;
+    font-size: 25px;
+}
+
+#fretep {
+    margin-bottom: 100px;
+}
+
+#descricaoproduto h1 {
+    font-size: 35px;
+}
+
+#descricaoproduto p {
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1440px) {
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    header {
+        position: sticky;
+        top: 0;
+        background-color: #000;
+        color: #fff;
+        z-index: 9999;
+        width: auto;
+        height: 130px;
+    }
+
+    #buscar #logo {
+        width: 40px;
+    }
+
+    #buscar {
+        display: flex;
+        justify-content: center;
+    }
+
+    #divBusca {
+        background-color: #ffffff;
+        border: solid 1px;
+        border-radius: 10px;
+        text-align: right;
+        width: 800px;
+        height: 40px;
+        margin: auto;
+    }
+
+    #txtBusca {
+        outline: none;
+        float: left;
+        background-color: transparent;
+        padding-left: 15px;
+        font-style: italic;
+        font-size: 20px;
+        border: none;
+        height: 45px;
+        width: 850px;
+
+    }
+
+    #botao {
+        width: 40px;
+        height: 40px;
+        margin-right: 20px;
+        position: relative;
+        bottom: 45px;
+    }
+
+
+    #carrinho {
+        position: absolute;
+        width: 50px;
+        height: 60px;
+        margin-top: 15px;
+        margin-right: 80px;
+        float: right;
+        left: 90%;
+    }
+
+    #cabecalho {
+        background-color: #D9D9D9;
+        text-align: center;
+
+    }
+
+    #cabecalho li {
+        display: inline-block;
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    #cabecalho a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    #cabecalho a:hover {
+        color: #FFF;
+        background-color: rgb(54, 54, 54);
+        padding: 5px;
+    }
+
+    #cabecalho a:active {
+        color: #FFF;
+        text-decoration: none;
+    }
+
+    main {
+        background-color: #fff;
+    }
+
+    .banner {
+        padding: 15px;
+    }
+
+    .banner img {
+        width: 100%;
+    }
+
+    .categorias {
+        padding: 15px;
+    }
+
+    .categorias article {
+        background-color: #fff;
+        border: 1px solid #000;
+        margin-bottom: 2%;
+        padding: 5px;
+        border-left: 5px solid #f5df4d;
+    }
+
+    .titulo {
+        margin-top: 20px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    #camisas {
+        display: flex;
+        justify-content: center;
+    }
+
+    #camisas a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    .produto {
+        display: inline-block;
+        height: 400px;
+        width: 280px;
+        background-color: #D9D9D9;
+        margin: auto;
+        border-radius: 20px;
+        text-align: center;
+        padding: 10px;
+        cursor: pointer;
+        box-sizing: border-box;
+
+    }
+
+    .produto:hover {
+        box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.05);
+        transform: scale(1.03);
+        transition: 0.5s;
+    }
+
+    .produto p {
+        font-size: 15px;
+    }
+
+    #preco {
+        margin-top: 0px;
+        font-size: 30px;
+
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        background-color: #000;
+        color: #fff;
+        padding: 30px 150px;
+    }
+
+    th {
+        font-size: 25px;
+        padding-bottom: 20px;
+    }
+
+    td {
+        text-align: center;
+        padding: 5px 50px;
+    }
+
+    #rodape a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    #rodape p {
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .politicas h2 {
+        text-align: center;
+        font-size: 45px;
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+
+    .politicas h3 {
+        text-align: center;
+        margin-top: 25px;
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+
+    .politicas p {
+        margin: 30px 300px;
+        text-align: justify;
+        font-size: 25px;
+    }
+
+    #fretep {
+        margin-bottom: 100px;
+    }
+
+    #descricaoproduto h1 {
+        font-size: 35px;
+    }
+
+    #descricaoproduto p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    header {
+        position: sticky;
+        top: 0;
+        background-color: #000;
+        color: #fff;
+        z-index: 9999;
+        width: auto;
+        height: 150px;
+    }
+
+     #logo {
+        float: left;
+        width: 55px;
+    }
+
+    #buscar {
+        display: flex;
+        justify-content: center;
+    }
+
+    #divBusca {
+        background-color: #ffffff;
+        border: solid 1px;
+        border-radius: 10px;
+        text-align: right;
+        width: 450px;
+        height: 40px;
+        margin: auto 100px auto 50px;
+    }
+
+    #txtBusca {
+        outline: none;
+        float: left;
+        background-color: transparent;
+        padding-left: 15px;
+        font-style: italic;
+        font-size: 20px;
+        border: none;
+        height: 45px;
+        width: 450px;
+
+    }
+
+    #botao {
+        width: 40px;
+        height: 40px;
+        margin-right: 20px;
+        position: relative;
+        bottom: 45px;
+    }
+
+    #cabecalho {
+        background-color: #D9D9D9;
+        text-align: center;
+
+    }
+
+    #cabecalho li {
+        display: inline-block;
+        font-size: 25px;
+        padding: 15px;
+    }
+
+    #cabecalho a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    #cabecalho a:hover {
+        color: #FFF;
+        background-color: rgb(54, 54, 54);
+        padding: 15px;
+    }
+
+    #cabecalho a:active {
+        color: #FFF;
+        text-decoration: none;
+    }
+
+    main {
+        background-color: #fff;
+    }
+
+    .banner {
+        padding: 15px;
+    }
+
+    .banner img {
+        width: 100%;
+    }
+
+    .categorias {
+        padding: 15px;
+    }
+
+    .categorias article {
+        background-color: #fff;
+        border: 1px solid #000;
+        margin-bottom: 2%;
+        padding: 5px;
+        border-left: 5px solid #f5df4d;
+    }
+
+    .titulo {
+        margin-top: 20px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    #camisas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+    }
+
+    #camisas a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    .produto {
+        display: inline-table;
+        height: 400px;
+        width: 280px;
+        background-color: #D9D9D9;
+        margin: auto;
+        border-radius: 20px;
+        text-align: center;
+        padding: 10px;
+        cursor: pointer;
+        box-sizing: border-box;
+
+    }
+
+    .produto:hover {
+        box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.05);
+        transform: scale(1.03);
+        transition: 0.5s;
+    }
+
+    .produto p {
+        font-size: 15px;
+    }
+
+    #preco {
+        margin-top: 0px;
+        font-size: 30px;
+
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        background-color: #000;
+        color: #fff;
+        padding: 30px 150px;
+    }
+
+    th {
+        font-size: 25px;
+        padding-bottom: 20px;
+    }
+
+    td {
+        text-align: center;
+        padding: 5px 80px;
+    }
+
+    #rodape a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    #rodape p {
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .politicas h2 {
+        text-align: center;
+        font-size: 35px;
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+
+    .politicas h3 {
+        text-align: center;
+        margin-top: 25px;
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+
+    .politicas p {
+        margin: 30px 100px;
+        text-align: justify;
+        font-size: 25px;
+    }
+
+    #fretep {
+        margin-bottom: 100px;
+    }
+
+    #descricaoproduto h1 {
+        font-size: 35px;
+    }
+
+    #descricaoproduto p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    header {
+        position: sticky;
+        top: 0;
+        background-color: #000;
+        color: #fff;
+        z-index: 9999;
+        width: auto;
+        height: 130px;
+    }
+
+    #buscar #logo {
+        width: 40px;
+    }
+
+    #buscar {
+        display: flex;
+        justify-content: center;
+    }
+
+    #divBusca {
+        background-color: #ffffff;
+        border: solid 1px;
+        border-radius: 10px;
+        text-align: right;
+        width: 200px;
+        height: 40px;
+        margin: auto;
+    }
+
+    #txtBusca {
+        outline: none;
+        float: left;
+        background-color: transparent;
+        padding-left: 15px;
+        font-style: italic;
+        font-size: 15px;
+        border: none;
+        height: 40px;
+        width: 80px;
+
+    }
+
+    #botao {
+        width: 35px;
+        height: 35px;
+        margin-right: 5px;
+        position:sticky;
+        bottom: 20px;
+    }
+
+
+    #carrinho {
+        display: none;
+        position: hidden;
+        width: 30px;
+        height: 40px;
+        margin-right: 0;
+        margin-top: 0;
+        left: 87%;
+        
+    }
+
+    #cabecalho {
+        background-color: #D9D9D9;
+        text-align: center;
+
+    }
+
+    #cabecalho li {
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    #cabecalho a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    #cabecalho a:hover {
+        color: #FFF;
+        background-color: rgb(54, 54, 54);
+        padding: 10px;
+    }
+
+    #cabecalho a:active {
+        color: #FFF;
+        text-decoration: none;
+    }
+
+    main {
+        background-color: #fff;
+    }
+
+    .banner {
+        display: none;
+        padding: 15px;
+    }
+
+    .banner img {
+        width: 100%;
+    }
+
+    .categorias {
+        padding: 15px;
+    }
+
+    .categorias article {
+        background-color: #fff;
+        border: 1px solid #000;
+        margin-bottom: 2%;
+        padding: 5px;
+        border-left: 5px solid #f5df4d;
+    }
+
+    .titulo {
+        margin-top: 20px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    #camisas {
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+    }
+
+    #camisas a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    .produto {
+        display: inline-block;
+        height: 400px;
+        width: 280px;
+        background-color: #D9D9D9;
+        margin: auto;
+        border-radius: 20px;
+        text-align: center;
+        padding: 10px;
+        cursor: pointer;
+        box-sizing: border-box;
+
+    }
+
+    .produto:hover {
+        box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.05);
+        transform: scale(1.03);
+        transition: 0.5s;
+    }
+
+    .produto p {
+        font-size: 15px;
+    }
+
+    #preco {
+        margin-top: 0px;
+        font-size: 30px;
+
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        background-color: #000;
+        color: #fff;
+        padding: 30px 10px;
+    }
+
+    th {
+        font-size: 25px;
+        padding-bottom: 20px;
+    }
+
+    td {
+        text-align: center;
+        padding: 5px 10px;
+    }
+
+    #rodape a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    #rodape p {
+        text-align: center;
+        padding-top: 30px;
+    }
+
+
+    .politicas h2 {
+        text-align: center;
+        font-size: 30px;
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+
+    .politicas h3 {
+        text-align: center;
+        margin-top: 25px;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .politicas p {
+        margin: 30px 20px;
+        text-align: justify;
+        font-size: 15px;
+    }
+
+    #fretep {
+        margin-bottom: 100px;
+    }
+
+    #descricaoproduto h1 {
+        font-size: 35px;
+    }
+
+    #descricaoproduto p {
+        font-size: 20px;
+    }
+}
